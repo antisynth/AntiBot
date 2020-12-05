@@ -13,7 +13,7 @@ module.exports = {
         .setDescription(message.channel.id)
         .setFooter(`Requested by ${message.author.username}`, message_author_avatar)
 
-        const target = message.mentions.members.first() || 
+        let target = message.mentions.members.first() || 
             message.guild.members.cache.find(member => member.user.username.toLowerCase() === args.join(" ").toLowerCase()) || 
             message.guild.members.cache.get(args[0]) || 
             message.guild.members.cache.find(member => member.displayName.toLowerCase() === args.join(" ").toLowerCase())

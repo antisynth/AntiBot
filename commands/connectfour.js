@@ -6,8 +6,8 @@ module.exports = {
     maxArgs: 999,
     expectedArgs: '<user>',
     callback: async (message, args) => {
-        const challenger = message.member;
-        const oppenent = message.mentions.members.first() || message.guild.members.cache.find(member => member.user.username.toLowerCase() === args.join(" ").toLowerCase()) || 
+        let challenger = message.member;
+        let oppenent = message.mentions.members.first() || message.guild.members.cache.find(member => member.user.username.toLowerCase() === args.join(" ").toLowerCase()) || 
             message.guild.members.cache.get(args[0]) || 
             message.guild.members.cache.find(member => member.displayName.toLowerCase() === args.join(" ").toLowerCase())
 

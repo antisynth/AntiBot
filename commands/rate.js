@@ -11,7 +11,7 @@ module.exports = {
                 return Math.floor(Math.random() * Math.floor(max))
             }
     
-            const target = message.mentions.members.first() || 
+            let target = message.mentions.members.first() || 
                 message.guild.members.cache.find(member => member.user.username.toLowerCase() === args.join(" ").toLowerCase()) || 
                 message.guild.members.cache.get(args[0]) || 
                 message.guild.members.cache.find(member => member.displayName.toLowerCase() === args.join(" ").toLowerCase())
