@@ -1,2 +1,2 @@
 # AntiBot
- Epic amazing cool super neat discord bot coded in javascript using the discord.js api!
+ Epic amazing cool super neat Discord bot coded in Javascript using the Discord.js API!
