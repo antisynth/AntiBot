@@ -13,9 +13,9 @@ module.exports = {
             message.guild.members.cache.find(member => member.displayName.toLowerCase() === args.join(" ").toLowerCase())
             
         try {
-            const avatar = target.user.avatarURL()  
-            const message_author_avatarURL = message.author.avatarURL()
-            const nick = target.displayName
+            let avatar = target.user.avatarURL()  
+            let message_author_avatarURL = message.author.avatarURL()
+            let nick = target.displayName
             if (nick === target.user.username) nick = 'No nickname'
             const embed = new Discord.MessageEmbed()
             .setTitle(`User info for ${target.user.username}`)

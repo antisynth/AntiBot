@@ -4,7 +4,7 @@ const fs = require('fs')
 const EventEmitter = require('events')
 
 const current_date = new Date()
-const bot = new Discord.Client()
+let bot = new Discord.Client()
 
 global.bot = bot
 EventEmitter.defaultMaxListeners = 50
