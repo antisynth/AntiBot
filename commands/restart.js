@@ -1,4 +1,4 @@
-var { token } = require('../config.json')
+var { token } = require('../realconfig.json')
 
 module.exports = {
     commands: ['restart', 'reloadclient'],

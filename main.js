@@ -9,7 +9,7 @@ const bot = new Discord.Client()
 global.bot = bot
 EventEmitter.defaultMaxListeners = 50
 
-const { token } = require('./config.json')
+const { token } = require('./realconfig.json')
 const { dependencies } = require('./package-lock.json')
 
 bot.on('ready', () => {
