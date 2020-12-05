@@ -20,8 +20,6 @@ module.exports = {
         } catch (err) {
             message.channel.send('Error while returning pong')
             throw new Error(err)
-        } finally {
-            console.log('Running command \'ping\'')
-        }
+        } 
     }
 }

@@ -59,8 +59,6 @@ module.exports = {
             message.channel.send('```diff\n-Cannot read property \'user\' of undefined-\n```')
             message.channel.send('Make sure you\'re entering a real username.')
             throw new Error(Exception)
-        } finally {
-            console.log('Running command \'userinfo\'')
         }
     }
 }

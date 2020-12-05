@@ -36,8 +36,6 @@ module.exports = {
             message.channel.send('```diff\n-Cannot read property \'user\' of undefined-\n```')
             message.channel.send('Make sure you\'re entering a real username.')
             console.error(err)
-        } finally {
-            console.log('Running command \'rate\'')
-        }
+        } 
     }
 }

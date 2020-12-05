@@ -84,7 +84,7 @@ module.exports = (client, commandOptions) => {
         content.toLowerCase() === command
       ) {
         // A command has been ran
-
+        console.log(`Running '${commands[0]}'`)
         // Ensure the user has the required permissions
         for (const permission of permissions) {
           if (!member.hasPermission(permission)) {

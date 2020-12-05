@@ -43,8 +43,6 @@ module.exports = {
             message.channel.send('Make sure you\'re entering a real username.')
 
             console.error(err)
-        } finally {
-            console.log('Running command \'gayrate\'')
         }
     }
 }

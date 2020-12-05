@@ -88,8 +88,6 @@ module.exports = (bot) = {
         } catch (err) {
             message.channel.send('Error while loading canvas image')
             throw new Error(err)
-        } finally {
-            console.log('Running command \'suntzu\'')
         }
     }
 }

@@ -44,8 +44,6 @@ module.exports = {
             message.channel.send('```diff\n-Cannot read property \'author\' of undefined\n```-')
             message.channel.send('Send this error to antisynth')
             throw new Error(err)
-        } finally {
-            console.log('Running command \'serverinfo\'')
         }
     }
 }

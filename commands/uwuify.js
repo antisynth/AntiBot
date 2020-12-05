@@ -57,8 +57,6 @@ module.exports = {
         } catch (err) {
             message.channel.send('Error uwu-ifying your message! Sowwy ;-;')
             throw new Error(err)
-        } finally {
-            console.log('Running command \'uwuify\'')
         }
     }
 }

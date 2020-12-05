@@ -10,8 +10,6 @@ module.exports = {
         } catch (err) {
             message.channel.send('Dropped and lost the coin!')
             throw new Error(err)
-        } finally {
-            console.log('Running command \'coinflip\'')
-        }
+        } 
     }
 }

@@ -16,8 +16,6 @@ module.exports = {
         } catch (err) {
             message.channel.send('Error getting date')
             throw new Error(err)
-        } finally {
-            console.log('Running \'botstartedat\'')
-        }
+        } 
     }
 }

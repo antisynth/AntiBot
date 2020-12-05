@@ -46,8 +46,6 @@ module.exports = {
         } catch (err) {
             message.channel.send('Error while magically predicting your answer')
             throw new Error(err)
-        } finally {
-            console.log('Running command \'8ball\'')
         }
     }
 }

@@ -28,6 +28,5 @@ module.exports = {
             ${prefix}**snake** - Play snake with reactions.`
         )
         message.channel.send(embed)
-        console.log('Running \'help\'')
     }
 }
