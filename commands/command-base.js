@@ -54,6 +54,8 @@ module.exports = (client, commandOptions) => {
     callback,
   } = commandOptions
 
+  if (!commands) return
+
   // Ensure the command and aliases are in an array
   if (typeof commands === 'string') {
     commands = [commands]
