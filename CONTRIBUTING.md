@@ -4,7 +4,8 @@
 All of the bot's commands are seperate JavaScript files found in [AntiBot/commands/](https://github.com/antisynth/AntiBot/tree/main/commands).
 The file can be called whatever as long as you define `commands: ` in the file to the actual name of the command, but it's definitely a lot easier if the file's name is the name of the command.
 #### Necessary keys
- * `commands:` - The name you have to input to execute the command. PROTIP! You can add aliases by making `commands:` a string array, like `commands: ['e', 'f']`.
+ * `commands:` - The name you have to input to execute the command.  
+ PROTIP! You can add aliases by making `commands:` a string array, like `commands: ['e', 'f']`.
  * `callback:` - The code that's run when the command is executed. Normally written as an arrow function, with message as a parameter. (`callback: (message) => {}`)
 #### Optional, but commonly used keys
  ##### Arguments
