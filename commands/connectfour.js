@@ -18,7 +18,7 @@ module.exports = {
 
         const question = await message.channel.send(`${oppenent}, would you like to play connect four against ${challenger}?`);
 
-        ["✅", "❌"].forEach(async el => await question.react(el));
+        ["✅", "❌"].forEach(async el => question.react(el));
         
         const filter = (reaction, user) => ["✅", "❌"].includes(reaction.emoji.name) && user.id === oppenent.id; 
 
